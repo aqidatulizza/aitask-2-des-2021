@@ -1,0 +1,54 @@
+@extends('layouts.app')
+
+@section('content')
+
+<section class="show-task">
+  <div class="card">
+    <div class="card-task-show">
+      <div class="task-name">
+          <h4>Create New Task</h4>
+      </div>
+
+    <hr>
+
+    <form method="post" action="{{ route('tasks.store' ) }}" enctype="multipart/form-data">
+            {{ csrf_field() }}
+
+      <input type="hidden" name="company_id" value="{{ $company_id }}"/>
+      <input type="hidden" name="project_id" value="{{ $project_id }}"/>
+      <input type="hidden" name="status_id" value="1"/>
+
+      <div class="form-group">
+        <label for="namatugas" style="margin-top:.5rem;"><h6>Name <span class="required">*</span></h6></label>
+        <input type="text" class="form-control" id="task-name" required name="name" 
+              spellcheck="false">
+      </div>
+      
+      <div class="form-group">
+        <label for="desctugas"><h6>Description</h6></label>
+        <textarea class="form-control" id="description" name="description" 
+              spellcheck="false" rows="3" placeholder="Optional"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="deadline"><h6>Deadline</h6></label>
+        <input type="date" class="form-control" id="deadline" name="deadline" 
+              spellcheck="false">
+      </div>
+      <div class="form-group">
+        <label for="filetugas"><h6>Task File</h6></label>
+        <input type="file" class="form-control-file" id="file" name="file" 
+              spellcheck="false" >
+      </div>
+      
+      <div class="form-group">
+        <a href="{{url()->previous()}}" class="btn btn-secondary mt-3">Cancel</a>
+        <input type="submit" class="btn btn-primary mt-3" value="Submit">
+      </div>
+
+    </form>
+    
+    </div>
+  </div>
+</section>
+
+@endsection

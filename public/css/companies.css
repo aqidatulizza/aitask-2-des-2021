@@ -1,0 +1,165 @@
+/* index company */
+
+.companies .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:1.5rem;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+
+.companies .box-container .box{
+    padding:1.5rem;
+    text-align: center;
+    border:.1rem solid rgba(255,255,255,.3); 
+    border-radius: 5%;  
+}
+
+.companies .box-container .box img{
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.companies .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.companies .box-container .box .description{
+    color: #fff;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+} 
+
+.companies .box-container .box:hover{
+    background:#DCDCDC;
+}
+
+.companies .box-container .box:hover > *{
+    color:#080808;
+}
+
+
+/*show company*/
+
+.show-company .jumbotron{
+    background: url('../images/bg-companies4-.jpg') no-repeat;
+    padding: 4rem;
+    color:#DCDCDC;
+}
+
+.show-company .breadcrumb{
+    height: 3rem;
+    padding-left: 1rem;
+    background: #DCDCDC;
+}
+
+.show-company .breadcrumb .breadcrumb-item{
+    margin:.7rem 0;
+    font-weight: 400;
+}
+
+.show-company .breadcrumb .breadcrumb-item a{
+    text-decoration: none;
+    color:#080808;
+}
+
+.show-company .breadcrumb .breadcrumb-item a:hover{
+    color:#6c757d;
+}
+
+.show-company .action .list-group{
+    padding: 2rem;
+
+}
+
+.show-company .action .list-group .list-group-item{
+    background: #212529;
+    margin-bottom: .5rem;
+    border-radius: 5%;
+    color:#DCDCDC;
+}
+
+.show-company .action .list-group .list-group-item:hover{
+    background: #DCDCDC;
+    color:#212529;
+}
+
+.show-company .action .list-group .list-group-item i{
+    margin-right: 5px;
+}
+
+.show-company .project-companies .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1.5rem;
+    margin-top: 5.8rem;
+    margin-bottom: 3rem;
+}
+
+.show-company .project-companies .box-container .box{
+    padding:1.5rem;
+    text-align: center;
+    border:.1rem solid rgba(255,255,255,.3); 
+    border-radius: 5%;  
+    text-decoration: none;
+}
+
+.show-company .project-companies .box-container .box img{
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.show-company .project-companies .box-container .box h3{
+    color: #fff;
+    font-size: 1.5rem;
+    padding:.7rem 0;
+}
+
+.show-company .project-companies .box-container .box .description{
+    color: #fff;
+    font-size: 1rem;
+} 
+
+.show-company .project-companies .box-container .box:hover{
+    background:#DCDCDC;
+}
+
+.show-company .project-companies .box-container .box:hover > *{
+    color:#080808;
+}
+
+.show-company .members{
+    padding: 0 .5rem;
+}
+
+.show-company .members .list-group .list-group-item{
+    background: #DCDCDC;
+}
+
+.show-company .members .list-group .list-group-item:hover{
+    color:#6c757d;
+}
+
+.show-company .members .list-group .list-group-item .name{
+    color: #212529;
+    text-decoration: none;
+}
+
+.show-company .members .list-group .list-group-item .name:hover{
+    color:#6c757d;
+}
+
+.show-company .members .list-group .list-group-item .delete{
+    color: #212529;
+    float: right;
+}
+
+.show-company .members .list-group .list-group-item .delete:hover{
+    color: red;
+}
+
+.show-company .members .list-group .list-group-item i{
+    margin-right: 5px;
+}

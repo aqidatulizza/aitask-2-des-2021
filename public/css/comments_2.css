@@ -1,0 +1,29 @@
+
+.comments {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.widget .panel-body { padding:0px; margin: 0px;}
+.widget .list-group { margin-bottom: 0; }
+.widget .panel-title { font-size: 20px; padding: 8px; }
+.widget .label-info { float: right; }
+.widget li.list-group-item {border-radius: 0;border: 0;border-top: 1px solid #ddd;}
+.widget li.list-group-item:hover { background-color: rgba(86,61,124,.1); }
+.widget .mic-info { color: #666666;font-size: 15px; }
+.widget .action { margin-top:5px; }
+.widget .comment-text { font-size: 15px; }
+.widget .btn-block { border-top-left-radius:0px;border-top-right-radius:0px; }
+.comment-name{
+    text-decoration:none; 
+    color:black; 
+    font-size: 15px;
+}
+.comment-name:hover{
+    text-decoration:none; 
+    color #2565AE;
+}
+
+
+
+

@@ -1,0 +1,12 @@
+<!--<a href="" class="delete"
+              onclick="var result= confirm('Apakah Kamu Yakin Ingin Hapus Member Ini?');
+              if(result){
+                      event.preventDefault();
+                      document.getElementById('delete-form').submit();}"><i class="fas fa-trash"></i>
+              </a>
+              <form id="delete-form" action="{{ route('companyusers.destroy', [$delete->id]) }}" method="POST"
+                  style="display: none;">
+                      <input type="hidden" name="_method" value="delete">
+                      {{ csrf_field() }}
+              </form>
+              </a>-->

@@ -1,0 +1,267 @@
+/* index projects */
+
+.projects .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1.5rem;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+
+.projects .box-container .box{
+    padding:1.5rem;
+    text-align: center;
+    border:.1rem solid rgba(255,255,255,.3); 
+    border-radius: 5%;  
+    text-decoration: none;
+}
+
+.projects .box-container .box img{
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.projects .box-container .box h3{
+    color: #fff;
+    font-size: 1.5rem;
+    padding:.7rem 0;
+}
+
+.projects .box-container .box h6{
+    color:#fff;
+}
+
+.projects .box-container .box hr{
+    color:#fff;
+}
+
+.projects .box-container .box .description{
+    color: #fff;
+    font-size: 1rem;
+} 
+
+.projects .box-container .box:hover{
+    background:#DCDCDC;
+}
+
+.projects .box-container .box:hover > *{
+    color:#080808;
+}
+
+
+/*show project*/
+
+.show-project .jumbotron{
+    background: url('../images/bg-companies4-.jpg') no-repeat;
+    padding: 4rem;
+    color:#DCDCDC;
+}
+
+.show-project .jumbotron p{
+    padding: 1px;
+    margin: 0;
+}
+
+.show-project .breadcrumb{
+    height: 3rem;
+    padding-left: 1rem;
+    background: #DCDCDC;
+}
+
+.show-project .breadcrumb .breadcrumb-item{
+    margin:.7rem 0;
+    font-weight: 400;
+}
+
+.show-project .breadcrumb .breadcrumb-item a{
+    text-decoration: none;
+    color:#080808;
+}
+
+.show-project .breadcrumb .breadcrumb-item a:hover{
+    color:#6c757d;
+}
+
+.show-project .action .list-group{
+    padding: 2rem;
+
+}
+
+.show-project .action .list-group .list-group-item{
+    background: #212529;
+    margin-bottom: .5rem;
+    border-radius: 5%;
+    color:#DCDCDC;
+}
+
+.show-project .action .list-group .list-group-item:hover{
+    background: #DCDCDC;
+    color:#212529;
+}
+
+.show-project .action .list-group .list-group-item i{
+    margin-right: 5px;
+}
+
+.show-project .card{
+    width: 40%;
+    margin: 1rem auto 0;
+}
+
+.show-project .members{
+    padding: 0 .5rem;
+}
+
+.show-project .members .list-group .list-group-item{
+    background: #DCDCDC;
+    color:#212529;
+}
+
+.show-project .members .list-group .list-group-item:hover{
+    color:#6c757d;
+}
+
+.show-project .members .list-group .list-group-item i{
+    margin-right: 5px;
+}
+
+.title-task{
+	margin: 0 auto 1rem;
+	height: 70px;
+	width: 70%;
+	max-width: 700px;
+	background: #010103;
+	position: relative;
+	box-shadow: 0 2px 3px 0 #fff;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+.title-task h1{
+    padding: 12px 0;
+	font-size: 2rem;
+	color:#DCDCDC;
+}
+
+.task{
+    max-height: 500px;
+    max-width: 400px;
+    overflow-y: scroll;
+}
+
+.task img{
+    height: 150px;
+    width: 200px;
+}
+
+.task-tobedone h6{
+    background: #212529;
+    color:#DCDCDC;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.task-tobedone h6 i{
+    color:red;
+}
+
+.task-onprogress h6{
+    background: #212529;
+    color:#DCDCDC;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.task-onprogress h6 i{
+    color: yellow;
+}
+
+.task-done h6{
+    background: #212529;
+    color:#DCDCDC;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.task-done h6 i{
+    color: green;
+}
+
+.project-task{
+    padding: 0 7% 3rem;
+}
+
+.project-task .card{
+    background: #DCDCDC;
+    border-radius: 15px;
+}
+
+.task .box-container .box{
+    text-align: center;
+    border:.1rem solid rgba(255,255,255,.3);
+    padding: 2rem;
+    background: #212529;
+    margin: .3rem;
+    border-radius: 10px;
+}
+
+.task .box-container .box .icons a{
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    border:.1rem solid rgba(255,255,255,.3);
+    border-radius: 5px;
+    color:#fff;
+    margin:.3rem;
+    text-decoration: none;
+}
+
+.task .box-container .box .icons a:hover{
+    background:#DCDCDC;
+    color: #212529;
+    text-decoration: none;
+}
+
+.task .box-container .box .content h6{
+    color:#fff;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+ .deadline{
+    margin: 0 3.5rem;
+    padding: 2px;
+    background: #DCDCDC;
+    color: black;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.create-task{
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    padding: .4rem 1.3rem;
+    margin: 0 1rem 1.3rem 1rem;
+    background: #DCDCDC;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.create-task:hover{
+    background: #212529;
+    color: white;
+    border:1px solid #DCDCDC;
+    text-decoration: none;
+}
